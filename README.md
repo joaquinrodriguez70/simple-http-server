@@ -14,12 +14,10 @@ The server continues to accept and process incoming connections until it is manu
 
 2. After increasing buffer to 10MiB, I got error `bus error` every time I started the server. After some research, I found out that the stack memory allocated for each thread is usually limited. So I allocate the buffers on the heap instead of the stack by using `malloc()` and `free()`.
 
---
-Modifed to execute yt360 on Spirit-os ,  
-put a yt url on the input box and video will play after a couple of minutes 
+##Modifed to execute yt360 on Spirit-os ,  
+Input a yt url on the input box and video will play after a couple of minutes 
 Note: Is not secure code 
 
 Compilation requires 
 compiletc.tcz 
-
 
