@@ -8,19 +8,16 @@
 FILE *fplog;
 int hayfilelog;
 
-
-// ABRE ARCHIVO DE RASTEO
 void startfilelog(int filelog, char * filename)
 {
 	hayfilelog=filelog;
 	if(hayfilelog)
 	{
 		fplog=fopen(filename,"w");
-		printf("DEBUG ACTIVADO (%s)\n",filename);
+		printf("DEBUG ACTIVE(%s)\n",filename);
 	}
 }
 
-// ESCRIBE EN ARCHIVO DE RASTEO
 void filelog(char *fmt,...)
 {
 	va_list args;
@@ -40,7 +37,7 @@ void closefilelog()
 	fclose(fplog);
 }
 
-// GUARDA EN DISCO BUFFER DE ARCHIVO
+
 void flushfilelog()
 {
 	fflush(fplog);
