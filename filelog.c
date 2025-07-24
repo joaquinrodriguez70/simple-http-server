@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include "filelog.h"
-#include <sys/sem.h>
-#include <sys/shm.h>
+
 
 
 FILE *fplog;
