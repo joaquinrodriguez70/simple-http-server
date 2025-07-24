@@ -1,0 +1,15 @@
+GET /uri.html HTTP/1.1
+Host: 192.168.1.75:8080
+User-Agent: Mozilla/5.0 (Android 14; Mobile; rv:141.0) Gecko/141.0 Firefox/141.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: es-US
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.1.75:8080/uri.html
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Priority: u=0, i
+
+
+no matching uri for ^GET /uri/\?uri=([^ ]*) HTTP/1 
+no matching uri for ^GET / HTTP/1 
+GET uri.html
